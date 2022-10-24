@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {Button, TextField} from "@mui/material";
+import {useState} from "react";
+import "./styles.css";
 
-function App() {
+export default function App () {
+  const [cep, setCep] = useState('');
+  const [logradouro, setLogradouro] = useState('');
+  const [bairro, setBairro] = useState('');
+
+  const buscarEndereco = () => {
+      fetch(`http://viacep.com.br/ws/${cep}/json`)
+        .then(res => res.json())
+        .then(dados => {
+          setBairro(dados.bairro);
+          setLogradouro(dados.logradouro);
+        });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className="endereco">
+      <form>
+        <TextField onBlur={buscarEndereco} onChange={event => setCep(event.target.value)} value={cep} label="CEP" fullWidth/>
+        
+        <TextField value={logradouro} label="Logradouro" fullWidth/>
 
-export default App;
+        <TextField value={bairro} label="Bairro" fullWidth/>
+      </form>
+    </div>
+  )
+}

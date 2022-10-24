@@ -1,0 +1,9 @@
+.endereco {
+    width: 94%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.MuiFormControl-root {
+    margin-bottom: 10px !important;
+}
