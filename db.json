@@ -1,4 +1,19 @@
 {
+    "carrinho": [
+        {
+            "id": 1,
+            "nome": "Pizza",
+            "quantidade": 2,
+            "valor": 29.90
+        },
+        {
+            "id": 2,
+            "nome": "Coca-Cola",
+            "quantidade": 1,
+            "valor": 9.90
+        }
+    ],
+
     "produtos": [
         {
             "id": 1,
