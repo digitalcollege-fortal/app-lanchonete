@@ -1,31 +1,42 @@
 {
-    "carrinho": [
-        {
-            "id": 1,
-            "nome": "Pizza",
-            "quantidade": 2,
-            "valor": 29.90
-        },
-        {
-            "id": 2,
-            "nome": "Coca-Cola",
-            "quantidade": 1,
-            "valor": 9.90
-        }
-    ],
-
-    "produtos": [
-        {
-            "id": 1,
-            "nome": "Pizza",
-            "valor": 29.90,
-            "foto": "https://img.itdg.com.br/tdg/images/blog/uploads/2022/07/5-itens-necessarios-para-se-tornar-um-pizzaiolo-neste-Dia-da-Pizza.jpg?mode=crop&width={:width=%3E150,%20:height=%3E130}"
-        },
-        {
-            "id": 2,
-            "nome": "Pratinho Gourmet",
-            "valor": 12.90,
-            "foto": "https://img.itdg.com.br/tdg/images/blog/uploads/2022/07/5-itens-necessarios-para-se-tornar-um-pizzaiolo-neste-Dia-da-Pizza.jpg?mode=crop&width={:width=%3E150,%20:height=%3E130}"
-        }
-    ]
+  "carrinho": [
+    {
+      "id": 1,
+      "nome": "Pizza",
+      "quantidade": 2,
+      "valor": 29.9
+    },
+    {
+      "id": 2,
+      "nome": "Coca-Cola",
+      "quantidade": 1,
+      "valor": 9.9
+    },
+    {
+      "id": 3,
+      "nome": "Dindin",
+      "quantidade": 4,
+      "valor": 2.9
+    },
+    {
+      "nome": "Pratinho Gourmet",
+      "valor": 12.9,
+      "quantidade": 1,
+      "id": 4
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Pizza",
+      "valor": 29.9,
+      "foto": "https://img.itdg.com.br/tdg/images/blog/uploads/2022/07/5-itens-necessarios-para-se-tornar-um-pizzaiolo-neste-Dia-da-Pizza.jpg?mode=crop&width={:width=%3E150,%20:height=%3E130}"
+    },
+    {
+      "id": 2,
+      "nome": "Pratinho Gourmet",
+      "valor": 12.9,
+      "foto": "https://img.itdg.com.br/tdg/images/blog/uploads/2022/07/5-itens-necessarios-para-se-tornar-um-pizzaiolo-neste-Dia-da-Pizza.jpg?mode=crop&width={:width=%3E150,%20:height=%3E130}"
+    }
+  ]
 }

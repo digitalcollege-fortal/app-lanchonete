@@ -21,6 +21,21 @@ export default function Products() {
             //npx json-server db.json --port 8000
     }, []);
 
+
+    const addProduto = (nome, valor) => {
+        fetch('http://localhost:8000/carrinho', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                nome: nome,
+                valor: valor,
+                quantidade: 1
+            })
+        });
+
+        alert('Pronto');
+    };
+
     const CadaProduto = (props) => {
         return (
             <Card style={{marginTop: '10px'}}>
@@ -37,7 +52,7 @@ export default function Products() {
                     <div style={{display: 'flex', marginTop: 10, justifyContent: 'space-between'}}>
                         <Typography>R$ {props.valor}</Typography>
 
-                        <Button align="right" variant="contained" color="success">Add</Button>
+                        <Button onClick={() => addProduto(props.nome, props.valor)} align="right" variant="contained" color="success">Add</Button>
                     </div>
                 </CardContent>
             </Card>
