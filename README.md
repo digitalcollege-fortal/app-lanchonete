@@ -22,4 +22,5 @@ Isso fará com que a API fique disponivel no endereço http://localhost:8000
 ### Passo 4 - Subir o servidor do React
 Em outra aba do terminal execute:
 - `npm start`
+
 Isso fará com que uma janela no navegador se abra com a aplicação, em http://localhost:3000
